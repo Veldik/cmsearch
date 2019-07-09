@@ -1,4 +1,4 @@
-#CMSearch
+# CMSearch
 Tato webová aplikace slouží k vyhledávání hráčů hrajících na Minecraft serveru [Craftmania](https://craftmania.cz). Také dokáže generovat bannery.
 
 ## Co dokáže nástroj vypsat:
