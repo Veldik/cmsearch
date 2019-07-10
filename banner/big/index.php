@@ -84,7 +84,7 @@ if ($status == "0"){
 }else
 imagefttext($rImg, 26, 0, 20, 295, $cor, $font_file, "Status: ".$status);
 */
-imagefttext($rImg, 40, 0, 20, 375, $cor, $font_file, "PLAY.CRAFTMANIA.CZ");
+imagefttext($rImg, 40, 0, 20, 375, $cor, $font_file, "MC.CRAFTMANIA.CZ");
         //Adjust paramerters according to your image
         imagecopymerge_alpha($rImg, $logo, 590, 60, 0, 0, 188, 304, 100);
 
