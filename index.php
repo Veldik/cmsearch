@@ -117,13 +117,6 @@
     <img src="https://minotar.net/cube/GoodSniperDawe/100.png">
   </a>
   <br><br>
-  <a href="https://velda.xyz/cm/search.php?nick=Horkanos">
-    <h2>
-      Horkanos
-    </h2>
-    <img src="https://minotar.net/cube/Horkanos/100.png">
-  </a>
-  <br><br>
   <a href="https://velda.xyz/cm/search.php?nick=iGniSsak">
     <h2>
       iGniSsak
