@@ -1,5 +1,5 @@
 # CMSearch
-Tato webová aplikace slouží k vyhledávání hráčů hrajících na Minecraft serveru [Craftmania](https://craftmania.cz). Také dokáže generovat bannery.
+CMSearch je webová aplikace, která slouží k vyhledávání hráčů hrajících na Minecraft serveru [Craftmania](https://craftmania.cz). Také dokáže generovat bannery.
 
 ## Co dokáže nástroj vypsat:
 1. Warez/Origo
