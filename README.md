@@ -11,4 +11,5 @@ CMSearch je webová aplikace, která slouží k vyhledávání hráčů hrajíc�
 7. Celkový počet hlasů, hlasů za měsíc a za týden (pokud kliknete na nadpis u hlasů můžete hlasovat za vyhledávaného hráče)
 8. Odkaz na listinu trestů
 
-* **Nástroj:** [https://velda.xyz/cm/](https://velda.xyz/cm/)
+* **Vyhledávač:** [https://velda.xyz/cm/](https://velda.xyz/cm/)
+* **Generátor bannerů:** [https://velda.xyz/cm/](https://velda.xyz/cm/banner)
