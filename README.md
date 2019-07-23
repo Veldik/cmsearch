@@ -12,4 +12,4 @@ CMSearch je webová aplikace, která slouží k vyhledávání hráčů hrajíc�
 8. Odkaz na listinu trestů
 
 * **Vyhledávač:** [https://velda.xyz/cm/](https://velda.xyz/cm/)
-* **Generátor bannerů:** [https://velda.xyz/cm/](https://velda.xyz/cm/banner)
+* **Generátor bannerů:** [https://velda.xyz/cm/banner](https://velda.xyz/cm/banner)
