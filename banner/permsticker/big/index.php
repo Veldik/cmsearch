@@ -5,8 +5,8 @@ $nick = $_GET['nick'];
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, 'https://velda.xyz/cm/banner/big/index.php?nick='.$nick.'&theme='.$theme);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); // good edit, thanks!
-curl_setopt($ch, CURLOPT_BINARYTRANSFER, 1); // also, this seems wise considering output is image.
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+curl_setopt($ch, CURLOPT_BINARYTRANSFER, 1); 
 $data = curl_exec($ch);
 curl_close($ch);
 $im = imagecreatefromstring($data);
