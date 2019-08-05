@@ -44,6 +44,38 @@
 ::placeholder {
   color: #a8a8a8;
 }
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col, .col-auto{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 100%;
+}
+
+.col-auto {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
   </style>
 </head>
 <article>
@@ -81,168 +113,194 @@
   <h1>
     AdminTeam:
   </h1>
-<div class="at">
+  </center>
+  <br />
+<div class="row">
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=Baru_hime">
     <h2>
       Baru_hime
     </h2>
     <img src="https://minotar.net/cube/Baru_hime/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=COOLPLAY1">
     <h2>
       COOLPLAY1
     </h2>
     <img src="https://minotar.net/cube/COOLPLAY1/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=dst_krabiquee">
     <h2>
       dst_krabiquee
     </h2>
     <img src="https://minotar.net/cube/dst_krabiquee/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=FilipVI">
     <h2>
       FilipVI
     </h2>
     <img src="https://minotar.net/cube/FilipVI/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=GoodSniperDawe">
     <h2>
       GoodSniperDawe
     </h2>
     <img src="https://minotar.net/cube/GoodSniperDawe/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=iGniSsak">
     <h2>
       iGniSsak
     </h2>
     <img src="https://minotar.net/cube/iGniSsak/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=iLukaZzekK_">
     <h2>
       iLukaZzekK_
     </h2>
     <img src="https://minotar.net/cube/iLukaZzekK_/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=ItzMinotaur">
     <h2>
       ItzMinotaur
     </h2>
     <img src="https://minotar.net/cube/ItzMinotaur/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=JacobSK_">
     <h2>
       JacobSK_
     </h2>
     <img src="https://minotar.net/cube/JacobSK_/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=KESP0">
     <h2>
       KESP0
     </h2>
     <img src="https://minotar.net/cube/KESP0/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=KopiisCZ">
     <h2>
       KopiisCZ
     </h2>
     <img src="https://minotar.net/cube/KopiisCZ/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=Krosta8">
     <h2>
       Krosta8
     </h2>
     <img src="https://minotar.net/cube/Krosta8/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=Mork04">
     <h2>
       Mork04
     </h2>
     <img src="https://minotar.net/cube/Mork04/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=MrWakeCZ">
     <h2>
       MrWakeCZ
     </h2>
     <img src="https://minotar.net/cube/MrWakeCZ/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=Nerdy42">
     <h2>
       Nerdy42
     </h2>
     <img src="https://minotar.net/cube/Nerdy42/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=peternz141">
     <h2>
       peternz141
     </h2>
     <img src="https://minotar.net/cube/peternz141/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=Ropacint">
     <h2>
       Ropacint
     </h2>
     <img src="https://minotar.net/cube/Ropacint/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=RstY_CZ">
     <h2>
       RstY_CZ
     </h2>
     <img src="https://minotar.net/cube/RstY_CZ/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=Speedy11CZ">
     <h2>
       Speedy11CZ
     </h2>
     <img src="https://minotar.net/cube/Speedy11CZ/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=standiczech">
     <h2>
       standiczech
     </h2>
     <img src="https://minotar.net/cube/standiczech/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=Tajr">
     <h2>
       Tajr
     </h2>
     <img src="https://minotar.net/cube/Tajr/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=Tolkyyy">
     <h2>
       Tolkyyy
     </h2>
     <img src="https://minotar.net/cube/Tolkyyy/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=Zillzi">
     <h2>
       Zillzi
     </h2>
     <img src="https://minotar.net/cube/Zillzi/100.png">
   </a>
-  <br><br>
+</div>
+<div class="col">
   <a href="https://velda.xyz/cm/search.php?nick=_Pyotr">
     <h2>
       _Pyotr
@@ -250,11 +308,9 @@
     <img src="https://minotar.net/cube/_Pyotr/100.png">
   </a>
 </div>
-  <br>
-  </center>
 </article>
 
 <footer>
-  <br><br>
+</div>\n<div class="col">
   Vytvořil <a href="https://velda.xyz/cm/search.php?nick=Velda_"><b>Velda</b></a>
 </footer>
