@@ -1,5 +1,5 @@
 # CMSearch
-CMSearch je webová aplikace, která slouží k vyhledávání a generaci bannerů hráčů a zobrazení těch nejlepších z nejleších, kteří hrajících na Minecraft serveru [CraftMania](https://craftmania.cz). 
+CMSearch je webová aplikace, která slouží k vyhledávání a generaci bannerů hráčů a zobrazení těch nejlepších z nejleších, kteří hrajících na Minecraft serveru [CraftMania](https://craftmania.cz).
 
 ## Co můžete zjistit?
 1. Zda má člověk koupený nebo warez Minecraft
@@ -14,4 +14,4 @@ CMSearch je webová aplikace, která slouží k vyhledávání a generaci banner
 ## Odkazy:
 * **Vyhledávač:** [https://velda.xyz/cm/search.php](https://velda.xyz/cm/search.php?nick=velda_)
 * **Generátor bannerů:** [https://velda.xyz/cm/banner](https://velda.xyz/cm/banner)
-* **Leaderboard:** [https://velda.xyz/cm/leadeboard.php](https://velda.xyz/cm/leadeboard.php)
+* **Leaderboard:** [https://velda.xyz/cm/leaderboard.php](https://velda.xyz/cm/leaderboard.php)
