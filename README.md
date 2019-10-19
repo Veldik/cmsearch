@@ -23,5 +23,5 @@ Tento projekt je neoficiální, takže nehledejte podporu na serveru CraftMania 
 
 Nebráním se, kdybyste mi chtěli pomoc s tímto projektem.
 
-## Main Contributors
+## Main Contributors:
 * [Velda](https://github.com/Veldik/)
