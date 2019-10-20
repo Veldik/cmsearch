@@ -10,7 +10,7 @@ $player = new Player($searchednick);
 // Zavolání funkce
 $player->getPlayer();
 echo $nick;
-echo $player->getPlayerCape("optifine");
+echo $player->getPlayerCraftMania("votes_week");
 ?>
 <br>
 <img src="<?php echo $player->getPlayerSkins("full"); ?>">
