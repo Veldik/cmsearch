@@ -2,10 +2,10 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^lb?$ leaderboard.php
-RewriteRule ^file-not-found?$ error/404.html
 RewriteRule ^leaderboard?$ leaderboard.php
 RewriteRule ^player/(.*) player.php?nick=$1
 RewriteRule ^banner?$ banner/index.php
 RewriteRule ^banner/(.*)/([0-9]+) banner/banner.php?nick=$1&type=$2
+RewriteRule ^file-not-found?$ error/404.html
 ErrorDocument 404 "404"
 ErrorDocument 500 "500"
