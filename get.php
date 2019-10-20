@@ -229,7 +229,11 @@ class Player
         // Social
         $cmplayersocialdata = $cmplayerdata->social;
         if ($datatype == "social_status"){
-            return $cmplayersocialdata->status;
+            if ($cmplayersocialdata->status == "Tento hráč nemá nastavený status..."){
+                return 0;
+            } else {
+                return $cmplayersocialdata->status;
+            }
         }
         if ($datatype == "facebook"){
             return $cmplayersocialdata->facebook;
