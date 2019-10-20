@@ -18,4 +18,4 @@ Následuj tyto kroky:
 4. Uvidíš chybu
 
 **Screenshots**
-Když je to možné, pŕidej screeny problému
+Když je to možné, přidej screeny problému
