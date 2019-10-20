@@ -7,5 +7,6 @@ RewriteRule ^player/(.*) player.php?nick=$1
 RewriteRule ^banner?$ banner/index.php
 RewriteRule ^banner/(.*)/([0-9]+) banner/banner.php?nick=$1&type=$2
 RewriteRule ^file-not-found?$ error/404.html
+RewriteRule ^internal-server-error?$ error/500.html
 ErrorDocument 404 "404"
 ErrorDocument 500 "500"
