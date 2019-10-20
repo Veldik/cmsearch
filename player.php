@@ -9,7 +9,8 @@ $searchednick = $_GET["nick"];
 $player = new Player($searchednick);
 // Zavolání funkce
 $player->getPlayer();
-echo $_GET["nick"];
+echo $nick;
+echo $player->getPlayerCape("optifine");
 ?>
+<br>
 <img src="<?php echo $player->getPlayerSkins("full"); ?>">
-

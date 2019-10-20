@@ -22,6 +22,7 @@ class Player
         // Přidání globálních proměných
         global $nick;
         global $mojangplayeruuid;
+        global $mojangplayeruuidwithoutbrackets;
         global $origo;
         // Ověření zda má hráč origo mc
         $mojangplayerurl = "https://api.mojang.com/users/profiles/minecraft/$this->searchednick";
@@ -36,7 +37,7 @@ class Player
         $cmplayeruuid =  $cmplayerdata->data->uuid;
 
         // Detekce origo účtu
-        if ($mojangplayeruuid == $cmplayeruuid) {
+        if ($mojangplayeruuid == $cmplayeruuid){
             $origo = TRUE;
             $nick = $mojangplayernick;
         } else {
@@ -55,7 +56,7 @@ class Player
             $skinuuid = str_replace("-","",$mojangplayeruuid);
         } else {
             // Přidání nickům, které nemají Mojang skin Steve
-            $skinuuid = "cecea4da3bc941f9a9109e7be63e1295";
+            $skinuuid = "8667ba71b85a4004af54457a9734eed7";
         }
         // Rozdělení skintype
         if ($skintype == "face" || $skintype == "avatar"){
@@ -72,5 +73,41 @@ class Player
         }
     }
 
+    //Zjišťování zda má hráč cape
+    public function getPlayerCape($capetype)
+    {
+        global $nick;
+        global $mojangplayeruuid;
+        //Zjišťování zda má člověk Optifine cape
+        if ($capetype == "optifine"){
+            if(@getimagesize("http://s.optifine.net/capes/$nick.png")){
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+        //Zjišťování zda má člověk Labymode cape
+        if ($capetype == "labymod"){
+            if (@getimagesize("http://capes.labymod.net/capes/$mojangplayeruuid")){
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+        //Zjišťování zda má člověk Mojang cape, nepoužívá se, kvůli limitům Mojang api
+        if ($capetype == "mojang"){
+            $mojangplayeruuidwithoutbrackets = str_replace("-","",$mojangplayeruuid);
+            $mojangskinhashurl = "https://sessionserver.mojang.com/session/minecraft/profile/$mojangplayeruuidwithoutbrackets";
+            $mojangskinhashjson = file_get_contents($mojangskinhashurl);
+            $mojangskinhashdata = json_decode($mojangskinhashjson);
+            $mojangskinhashvalue = $mojangskinhashdata->properties[0]->value;
+            $mojangskinjson = base64_decode($mojangskinhashvalue);
+            $mojangskincape = $mojangskinjson->textures->CAPE->url;
+            if (isset($mojangskincape)){
+                return 1;
+            }
+        }
+
+    }
 }
 ?>

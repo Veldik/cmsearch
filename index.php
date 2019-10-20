@@ -1,1 +1,3 @@
-<a></a>
+<?php
+echo "tohle je index."
+?>
