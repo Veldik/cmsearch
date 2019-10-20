@@ -9,8 +9,7 @@ $searchednick = $_GET["nick"];
 $player = new Player($searchednick);
 // Zavolání funkce
 $player->getPlayer();
-echo $nick;
-echo $player->getPlayerCraftMania("social_status");
+echo $player->getPlayerCraftMania("level");
 ?>
 <br>
 <img src="<?php echo $player->getPlayerSkins("full"); ?>">
