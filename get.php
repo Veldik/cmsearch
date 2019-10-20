@@ -154,7 +154,7 @@ class Player
         if ($datatype == "mc_version"){
             return $cmplayerdata->mc_version;
         }
-        //Ekonomika
+        // Ekonomika
         $cmplayereconomydata = $cmplayerdata->economy;
         if ($datatype == "cc" || $datatype == "craftcoins"){
             return $cmplayereconomydata->craftcoins;
@@ -212,7 +212,7 @@ class Player
         if ($datatype == "skycloud_experience" || $datatype == "skycloud_xp"){
             return $cmplayerrankeddata->skycloud_experience;
         }
-        //Votes
+        // Votes
         $cmplayervotesdata = $cmplayerdata->votes;
         if ($datatype == "votes_total"){
             return $cmplayervotesdata->total;
@@ -226,7 +226,7 @@ class Player
         if ($datatype == "last_vote"){
             return $cmplayervotesdata->last_vote;
         }
-        //Social
+        // Social
         $cmplayersocialdata = $cmplayerdata->social;
         if ($datatype == "social_status"){
             return $cmplayersocialdata->status;
