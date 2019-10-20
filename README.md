@@ -19,7 +19,7 @@ CMSearch je webová aplikace, která slouží k vyhledávání a generaci banner
 * **Leaderboard:** [https://velda.xyz/cm/leaderboard.php](https://velda.xyz/cm/leaderboard.php)
 
 ## Podpora:
-Tento projekt je neoficiální, takže nehledejte podporu na serveru CraftMania *hlavně nepište Wakovi(nedal by mi sušenku)*, pokud budete potřebovat pomoc nebo budete mít nápad na vylepšení, napište mi na [Discord](https://discord.gg/czbmAww) nebo vyhledejte kontakt na mém [webu](https://velda.xyz).
+Tento projekt je neoficiální, takže nehledejte podporu na serveru CraftMania *hlavně nepište Wakovi(nedal by mi sušenku)*, pokud budete potřebovat pomoc nebo budete mít nápad na vylepšení, napište do [issues](https://github.com/Veldik/cmsearch/issues) nebo vyhledejte kontakt na mém [webu](https://velda.xyz).
 
 Nebráním se, kdybyste mi chtěli pomoc s tímto projektem.
 
