@@ -1,4 +1,9 @@
 html, body {
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
+}
+article{
+    background: #0f3169;
+    color: #dedede;
 }

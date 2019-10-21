@@ -24,7 +24,6 @@ class Player
         // Přidání globálních proměných
         global $nick;
         global $mojangplayeruuid;
-        global $mojangplayeruuidwithoutbrackets;
         global $origo;
         // Ověření zda má hráč origo mc
         $mojangplayerurl = "https://api.mojang.com/users/profiles/minecraft/$this->searchednick";
