@@ -1,3 +1,4 @@
 <?php
-echo "tohle je index."
+$text = "tohle je index"
+echo $text
 ?>
