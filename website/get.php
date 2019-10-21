@@ -38,10 +38,10 @@ class Player
 
         // Detekce origo účtu
         if ($mojangplayeruuid == $cmplayeruuid){
-            $origo = TRUE;
+            $origo = 1;
             $nick = $mojangplayernick;
         } else {
-            $origo = FALSE;
+            $origo = 0;
             $nick = $this->searchednick;
         }
     }
