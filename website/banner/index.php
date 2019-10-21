@@ -1,2 +1,3 @@
-banner vytvoris
-/banner/nick/ciselnytyp
+<?php?
+  echo = "banner vytvoris /banner/nick/ciselnytyp"
+?>
