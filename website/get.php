@@ -1,4 +1,6 @@
 <?php
+global $config;
+$config = file_get_contents("config.json");
 class Player
 {
     public $searchednick;
@@ -262,11 +264,62 @@ class Player
             }
         }
     }
+    public function getPlayerDiscord($datatype)
+    {
+        global $config;
+        $id = $this->getPlayerCraftMania("discord_id");
+        if ($id == 0) {
+            return 0;
+        } else {
+            $url = "https://discordapp.com/api/v6/users/$id";
+
+            $configarray = json_decode($config);
+            $bot_token = $configarray->discord->bot_token;
+            $header = "Authorization: Bot $bot_token";
+            $headers = array(
+                'Content-type: application/json',
+                $header,
+            );
+
+            $ch = curl_init();
+            curl_setopt($ch,CURLOPT_URL,$url);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+            $discordjsonresult = curl_exec($ch);
+            $discorddataresult = json_decode($discordjsonresult);
+            curl_close($ch);
+
+            if ($datatype == "username" || $datatype == "nick" || $datatype == "name") {
+                return $discorddataresult->username;
+            }
+            if ($datatype == "tag" || $datatype == "discriminator") {
+                return "#".$discorddataresult->discriminator;
+            }
+            if ($datatype == "id") {
+                return $discorddataresult->id;
+            }
+            if ($datatype == "avatar") {
+                $discordavatarfile = $discorddataresult->avatar;
+                if(substr($discorddataresult->avatar, 0, 2) == 'a_' ){
+                    $discordavatarfile .='.gif';
+                } else {
+                    $discordavatarfile .= '.png';
+                }
+                $discordavatarurl = 'https://cdn.discordapp.com/avatars/'.$discorddataresult->id.'/'.$discordavatarfile;
+
+                return $discordavatarurl;
+            }
+            if ($datatype == "fullname") {
+                return $this->getPlayerDiscord("name") . $this->getPlayerDiscord("tag");
+            }
+        }
+    }
 }
 class Leaderboard
 {
-    public function getCraftMania($datatype, $limit){
-
+    public function getCraftMania($datatype){
+        $url = "https://api.craftmania.cz/economy/leaderboard/";
     }
 }
 ?>

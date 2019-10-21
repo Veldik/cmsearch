@@ -10,6 +10,8 @@ $player = new Player($searchednick);
 // Zavolání funkce
 $player->getPlayer();
 echo $player->getPlayerCraftMania("level");
+
 ?>
 <br>
+<img src="<?php echo $player->getPlayerDiscord("avatar");?>">
 <img src="<?php echo $player->getPlayerSkins("full"); ?>">
