@@ -1,5 +1,5 @@
 <?php
-// Nezobrazování errorů, stejně tady žádné nejsou :kappa:
+// Nezobrazování errorů, stejně tady žádné nejsou
 // ini_set("display_errors", 0);
 // Přidání get.php
 require_once('get.php');
