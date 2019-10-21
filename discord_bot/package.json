@@ -1,0 +1,26 @@
+{
+  "name": "cmsearch_discord_bot",
+  "version": "1.0.0",
+  "description": "Discord bot propojený s CMSearch, pro změnu hodnot v databázi.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veldik/cmsearch.git"
+  },
+  "keywords": [
+    "cmsearch",
+    "discordbot"
+  ],
+  "author": "Velda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/veldik/cmsearch/issues"
+  },
+  "homepage": "https://github.com/veldik/cmsearch#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
