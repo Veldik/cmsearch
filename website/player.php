@@ -29,9 +29,11 @@ $player->getPlayerCraftManiaCheck();
             <h1>
                 Informace o hráči: <span style="color:orange"><?php echo $player->getPlayerCraftMania("nick"); ?></span>
             </h1>
-            <h2>
-                Sociální sítě:
-            </h2>
+            <?php
+            if($player->getPlayerCraftMania("social_status") == "0" && $player->getPlayerCraftMania("facebook") == "0" && $player->getPlayerCraftMania("twitter") == "0" && $player->getPlayerCraftMania("twitch") == "0" && $player->getPlayerCraftMania("steam") == "0" && $player->getPlayerCraftMania("youtube") == "0" && $player->getPlayerCraftMania("web") == "0" && $player->getPlayerDiscord("id") == "0"){
+                echo "<h2>Sociální sítě:</h2>";
+            }
+            ?>
             <?php
             if($player->getPlayerCraftMania("social_status") != "0"){
                 echo "<p>Status: <b>" .$player->getPlayerCraftMania("social_status")."</b></p>";
