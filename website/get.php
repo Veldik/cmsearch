@@ -112,19 +112,25 @@ class Player
             }
         }
     }
-    public function getPlayerCraftMania($datatype){
+    public function getPlayerCraftManiaCheck(){
         global $nick;
+        global $cmplayerdata;
         global $craftmaniaerror;
+        global $craftmaniastatus;
         $craftmaniaplayerurl = "https://api.craftmania.cz/player/$nick";
         $craftmaniaplayerjson = file_get_contents($craftmaniaplayerurl);
         $craftmaniaplayerdata = json_decode($craftmaniaplayerjson);
         $craftmaniastatus = $craftmaniaplayerdata->status;
+        $cmplayerdata =  $craftmaniaplayerdata->data;
+    }
+    public function getPlayerCraftMania($datatype){
+        global $craftmaniastatus;
+        global $cmplayerdata;
         // Řešení, když hráč nebyl na CM, nebo zadal špatně nick
         if ($craftmaniastatus != "200") {
             $craftmaniaerror = 1;
             return 0;
         } else {
-            $cmplayerdata =  $craftmaniaplayerdata->data;
             if ($datatype == "id") {
                 return $cmplayerdata->id;
             }
@@ -153,7 +159,8 @@ class Player
                 return $cmplayerdata->is_online;
             }
             if ($datatype == "played_time") {
-                return $cmplayerdata->played_time;
+                $timeplayed = $cmplayerdata->played_time/60;
+                return $timeplayed;
             }
             // Nesprávná, kvůlí používání ViaVersion
             if ($datatype == "mc_version") {

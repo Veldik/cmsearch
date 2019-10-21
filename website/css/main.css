@@ -4,6 +4,29 @@ html, body {
     padding: 0;
 }
 article{
-    background: #0f3169;
+    background-image: linear-gradient(to right, #003266, #3e5bad);
+    color: #dedede;
+    height: 600px;
+}
+div{
+    padding: 30px;
+}
+.main img{
+    float: left;
+}
+h1{
+    font-size: 175%;
+}
+h2{
+    font-size: 150%;
+    margin: 0px;
+}
+p{
+    margin: 0px;
+    font-size: 125%;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
     color: #dedede;
 }
