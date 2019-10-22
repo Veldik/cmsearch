@@ -97,10 +97,10 @@ global $origo;
                     Poslední hlas: <b><?php echo $time->timeAgo($player->getPlayerCraftMania("last_vote"))?></b><br>
                 </p>
             </div>
-            <div class="info">
+
             <?php
             if($player->getPlayerCraftMania("social_status") != "0" || $player->getPlayerCraftMania("facebook") != "0" || $player->getPlayerCraftMania("twitter") != "0" || $player->getPlayerCraftMania("twitch") != "0" || $player->getPlayerCraftMania("steam") != "0" || $player->getPlayerCraftMania("youtube") != "0" || $player->getPlayerCraftMania("web") != "0" || $player->getPlayerDiscord("id") != "0"){
-                echo "<h2>Sociální sítě:</h2>";
+                echo "<div class='info'><h2>Sociální sítě:</h2>";
             }
             if($player->getPlayerCraftMania("social_status") != "0"){
                 echo "<p>Status: <b>" .$player->getPlayerCraftMania("social_status")."</b></p>";
@@ -126,8 +126,11 @@ global $origo;
             if($player->getPlayerDiscord("id") != "0"){
                 echo "<p>Discord: <b>".$player->getPlayerDiscord("fullname")."</b></p>";
             }
+            if($player->getPlayerCraftMania("social_status") != "0" || $player->getPlayerCraftMania("facebook") != "0" || $player->getPlayerCraftMania("twitter") != "0" || $player->getPlayerCraftMania("twitch") != "0" || $player->getPlayerCraftMania("steam") != "0" || $player->getPlayerCraftMania("youtube") != "0" || $player->getPlayerCraftMania("web") != "0" || $player->getPlayerDiscord("id") != "0"){
+                echo "</div>";
+            }
             ?>
-            </div>
+
         </div>
     </article>
     <footer>
