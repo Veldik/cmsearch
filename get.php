@@ -350,7 +350,9 @@ class Time
         $weeks = round($days / 7);
         $months = round($weeks / 4.3);
 
-        if($seconds <= 60) {
+        if ($timestamp == 0) {
+            return 0;
+        } elseif($seconds <= 60) {
             if ($seconds == 1) {
                 return "sekundu zpět";
             } else if($seconds <= 4) {
