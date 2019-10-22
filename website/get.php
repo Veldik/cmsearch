@@ -53,7 +53,7 @@ class Player
         // Přidání globální proměné Mojang uuid
         global $mojangplayeruuid;
         // Když nemá Mojang skin přidá warez skin, pokud má Mojang skin odebere pomlčky z uuid
-        if (isset($mojangplayeruuid)){
+        if ($mojangplayeruuid != "----"){
             $skinuuid = str_replace("-","",$mojangplayeruuid);
         } else {
             // Přidání nickům, které nemají Mojang skin Steve
@@ -180,13 +180,15 @@ class Player
             if ($datatype == "karma") {
                 return $cmplayereconomydata->karma;
             }
-            if ($datatype == "aapoint" || $datatype == "aachpoints" || $datatype == "achievement_points") {
+            if ($datatype == "aapoints" || $datatype == "aachpoints" || $datatype == "achievement_points") {
                 return $cmplayereconomydata->achievement_points;
             }
             //Ranked
             $cmplayerrankeddata = $cmplayerdata->ranked;
             if ($datatype == "global_level" || $datatype == "level") {
-                return $cmplayerrankeddata->global_level;
+                return $cmplayerrankeddata->creative_level + $cmplayerrankeddata->vanilla_level;
+                //Custom počítání globálního levelu protože ho api vrací špatně, až bude v api správně můžu smazat
+                //return $cmplayerrankeddata->global_level;
             }
             if ($datatype == "survival_level") {
                 return $cmplayerrankeddata->survival_level;
@@ -263,7 +265,16 @@ class Player
                 return $cmplayersocialdata->youtube;
             }
             if ($datatype == "web") {
-                return $cmplayersocialdata->web;
+                if ($cmplayersocialdata->web != "0") {
+                    if (substr($cmplayersocialdata->web, 0, 4) != 'http' ){
+                        $cmplayersocialweb = "http://" . $cmplayersocialdata->web;
+                    } else {
+                        $cmplayersocialweb = $cmplayersocialdata->web;
+                    }
+                    return $cmplayersocialweb;
+                } else {
+                    return 0;
+                }
             }
             if ($datatype == "discord_id") {
                 return $cmplayerdata->discord->id;
@@ -326,6 +337,35 @@ class Leaderboard
 {
     public function getCraftMania($datatype){
         $url = "https://api.craftmania.cz/economy/leaderboard/";
+    }
+}
+class Time
+{
+    public function timeAgo($timestamp){
+        $ago = time() - $timestamp / 1000;
+        $seconds = round($ago);
+        $minutes = round($seconds / 60);
+        $hours = round($minutes / 60);
+        $days = round($hours / 24);
+        $weeks = round($days / 7);
+        $months = round($weeks / 4.3);
+
+        if($seconds <= 60) {
+            return $seconds . " sekund zpět";
+        } elseif($minutes <= 60) {
+            return $minutes . " minut zpět";
+        } elseif($hours <= 24) {
+            return $hours . " hodin zpět";
+        } elseif($days <= 7) {
+            return $days . " dní zpět";
+        } elseif($weeks <= 30) {
+            return $weeks . " týdnů zpět";
+        } if($months <= 30) {
+            return $months . " měsíců zpět";
+        }
+    }
+    public function date($timestamp){
+        return date('d.m.Y', $timestamp/1000);
     }
 }
 ?>

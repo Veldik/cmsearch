@@ -6,16 +6,43 @@ html, body {
 article{
     background-image: linear-gradient(to right, #003266, #3e5bad);
     color: #dedede;
-    height: 600px;
 }
-div{
-    padding: 30px;
+.info{
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.main {
+    overflow: auto;
 }
 .main img{
+    padding: 30px;
     float: left;
+}
+
+@media only screen and (max-width: 990px){
+    .main{
+        text-align: center;
+    }
+    .main img{
+        float: none;
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .info {
+        display: block;
+    }
 }
 h1{
     font-size: 175%;
+    text-align: center;
 }
 h2{
     font-size: 150%;
@@ -25,8 +52,11 @@ p{
     margin: 0px;
     font-size: 125%;
 }
-a{
+.main a{
     text-decoration: none;
     font-weight: bold;
     color: #dedede;
+}
+.xp {
+    color: #9c9c9c;
 }
