@@ -20,6 +20,10 @@ global $origo;
     <meta charset="UTF-8">
     <title>CMSearch | <?php echo $player->getPlayerCraftMania("nick"); ?></title>
     <link rel="shortcut icon" href="<?php echo $player->getPlayerSkins("avatar"); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2575DC">
+    <meta name="description" content="Základní informace o hráči <?php echo $player->getPlayerCraftMania("nick"); ?> ze serveru CraftManie.">
+    <meta property="og:image" content="<?php echo $player->getPlayerSkins("head")?>">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
