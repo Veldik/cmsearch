@@ -83,7 +83,7 @@ global $origo;
                     Creative level: <b><?php echo $player->getPlayerCraftMania("creative_level")?></b> <span class="xp">(<?php echo $player->getPlayerCraftMania("creative_xp")?>XP)</span><br>
                     Vanilla level: <b><?php echo $player->getPlayerCraftMania("vanilla_level")?></b> <span class="xp">(<?php echo $player->getPlayerCraftMania("vanilla_xp")?>XP)</span><br>
                     Prison level: <b><?php echo $player->getPlayerCraftMania("prison_level")?></b> <span class="xp">(<?php echo $player->getPlayerCraftMania("prison_xp")?>XP)</span><br>
-                    Skycloud level: <b><?php echo $player->getPlayerCraftMania("skycloud_level")?></b> <span class="xp">(<?php echo $player->getPlayerCraftMania("skycloud_xp")?>XP)</span><br>
+                    SkyCloud level: <b><?php echo $player->getPlayerCraftMania("skycloud_level")?></b> <span class="xp">(<?php echo $player->getPlayerCraftMania("skycloud_xp")?>XP)</span><br>
                 </p>
             </div>
             <div class="info">

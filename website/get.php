@@ -350,18 +350,54 @@ class Time
         $weeks = round($days / 7);
         $months = round($weeks / 4.3);
 
-        if($seconds <= 60) {
-            return $seconds . " sekund zpět";
+        if ($timestamp == 0) {
+            return 0;
+        } elseif($seconds <= 60) {
+            if ($seconds == 1) {
+                return "sekundu zpět";
+            } else if($seconds <= 4) {
+                return $seconds . " sekundy zpět";
+            } else {
+                return $seconds . " sekund zpět";
+            }
         } elseif($minutes <= 60) {
-            return $minutes . " minut zpět";
+            if ($minutes == 1) {
+                return "minutu zpět";
+            } else if($minutes <= 4) {
+                return $minutes . " minuty zpět";
+            } else {
+                return $minutes . " minut zpět";
+            }
         } elseif($hours <= 24) {
-            return $hours . " hodin zpět";
+            if ($hours == 1) {
+                return "hodinu zpět";
+            } else if($hours <= 4) {
+                return $hours . " hodiny zpět";
+            } else {
+                return $hours . " hodin zpět";
+            }
         } elseif($days <= 7) {
-            return $days . " dní zpět";
-        } elseif($weeks <= 30) {
-            return $weeks . " týdnů zpět";
-        } if($months <= 30) {
-            return $months . " měsíců zpět";
+            if ($days == 1) {
+                return "den zpět";
+            } else if($days <= 4) {
+                return $days . " dny zpět";
+            } else {
+                return $days . " dní zpět";
+            }
+        } elseif($weeks <= 4) {
+            if ($weeks == 1) {
+                return "týden zpět";
+            } else {
+                return $weeks . " týdny zpět";
+            }
+        } else {
+            if ($months == 1) {
+                return "měsíc zpět";
+            } else if($months <= 4) {
+                return $months . " měsíce zpět";
+            } else {
+                return $months . " měsíců zpět";
+            }
         }
     }
     public function date($timestamp){
