@@ -143,9 +143,6 @@ class Player
             if ($datatype == "uuid") {
                 return $cmplayerdata->uuid;
             }
-            if ($datatype == "web_group") {
-                return $cmplayerdata->web_group;
-            }
             if ($datatype == "registred") {
                 return $cmplayerdata->registred;
             }
