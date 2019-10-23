@@ -28,8 +28,8 @@ global $origo;
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-    </header>
+    <?php include("./analytics.php"); ?>
+    <?php include("./header.php"); ?>
     <article>
         <div class="main">
             <h1>
