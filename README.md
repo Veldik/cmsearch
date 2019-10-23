@@ -14,9 +14,9 @@ CMSearch je webová aplikace, která slouží k vyhledávání a generaci banner
 8. Odkaz na listinu trestů
 
 ## Odkazy:
-* **Vyhledávač:** [https://velda.xyz/cm/search.php](https://velda.xyz/cm/search.php?nick=velda_)
-* **Generátor bannerů:** [https://velda.xyz/cm/banner](https://velda.xyz/cm/banner)
-* **Leaderboard:** [https://velda.xyz/cm/leaderboard.php](https://velda.xyz/cm/leaderboard.php)
+* **Vyhledávač:** [https://cm.velda.xyz/player](https://cm.velda.xyz/player)
+* **Generátor bannerů:** Momentálně nedostupné!
+* **Leaderboard:** Momentálně nedostupné!
 
 ## Podpora:
 Tento projekt je neoficiální, takže nehledejte podporu na serveru CraftMania *hlavně nepište Wakovi(nedal by mi sušenku)*, pokud budete potřebovat pomoc nebo budete mít nápad na vylepšení, napište do [issues](https://github.com/Veldik/cmsearch/issues) nebo vyhledejte kontakt na mém [webu](https://velda.xyz).
