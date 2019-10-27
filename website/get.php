@@ -184,8 +184,8 @@ class Player
             $cmplayerrankeddata = $cmplayerdata->ranked;
             if ($datatype == "global_level" || $datatype == "level") {
                 return $cmplayerrankeddata->creative_level + $cmplayerrankeddata->vanilla_level;
-                //Custom počítání globálního levelu protože ho api vrací špatně, až bude v api správně můžu smazat
-                //return $cmplayerrankeddata->global_level;
+                // Custom počítání globálního levelu protože ho api vrací špatně, až bude v api správně můžu smazat
+                // return $cmplayerrankeddata->global_level;
             }
             if ($datatype == "survival_level") {
                 return $cmplayerrankeddata->survival_level;
@@ -401,4 +401,3 @@ class Time
         return date('d.m.Y', $timestamp/1000);
     }
 }
-?>

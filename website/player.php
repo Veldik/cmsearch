@@ -25,12 +25,13 @@ global $origo;
     <meta name="description" content="Základní informace o hráči <?php echo $player->getPlayerCraftMania("nick"); ?> ze serveru CraftManie.">
     <meta property="og:image" content="<?php echo $player->getPlayerSkins("head")?>">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script type="text/javascript" src="../js/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
     <?php include("./analytics.php"); ?>
     <?php include("./header.php"); ?>
-    <article>
+    <article class="player">
         <div class="main">
             <h1>
                 Informace o hráči: <?php echo $player->getPlayerCraftMania("nick"); ?>

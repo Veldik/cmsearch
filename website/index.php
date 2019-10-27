@@ -1,16 +1,24 @@
-<?php
-include("./analytics.php");
-include("./header.php");
-$text = "Titulní strana bude již brzy.";
-echo $text;
-?>
-<script type="text/javascript">
-    function find_player() {
-        var searchednick = document.getElementById("nick_search");
-        var nick = searchednick.value;
-        var link = "./player/" + nick;
-        window.location = link;
-    }
-</script>
-<input type="text" placeholder="Najít hráče..." id="nick_search">
-<input type="button" value="🔍" onClick="find_player()"/>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>CMSearch | Domovská stránka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2575DC">
+    <meta name="description" content="Domovská stránka CMSearch, jednoho z nejlepších vyhledáčů hráču, kteří hrají na serveru CraftMania.">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script type="text/javascript" src="./js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <?php include("./analytics.php"); ?>
+    <?php include("./header.php"); ?>
+    <article>
+        <h1>
+            <center>
+                Zde již brzy bude titulní strana, můžeš vyzkoušet vyhledávání v hlavičce.
+            </center>
+        </h1>
+    </article>
+</body>
+</html>

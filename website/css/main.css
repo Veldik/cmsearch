@@ -6,8 +6,31 @@ html, body {
 header{
     height: 50px;
     background-image: linear-gradient(to left, rgb(3, 120, 170), rgb(18, 28, 167));
+    position: relative;
+    text-align: right;
+
+}
+.header{
+    position: absolute;
+    top: 50%;
+    margin-left: 20px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+header input{
+    box-sizing: border-box;
+    background: #ffffff;
+    border: none;
+    height: 30px;
+    border-radius: 25px;
+}
+header input[type="text"]{
+    padding-left: 20px;
 }
 article{
+    color: #282828;
+}
+.player{
     background-image: url("../images/backgrounds/skyline.png");
     color: #dedede;
     background-position: center;
@@ -31,12 +54,11 @@ article{
     padding: 30px;
     float: left;
 }
-h1{
+.player h1{
     font-size: 225%;
     text-align: center;
     background: rgba(22, 22, 22, 0.4);
     margin: 10px;
-
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
@@ -53,7 +75,7 @@ p{
     font-weight: bold;
     color: #dedede;
 }
-.xp {
+.xp{
     color: #9c9c9c;
 }
 @media only screen and (max-width: 990px){
