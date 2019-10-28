@@ -55,6 +55,12 @@ global $origo;
                     } else {
                         echo "Je warezák! <span style=\"color:red;\" >❌</span>";
                     }
+                    if ($player->getPlayerCape("optifine") == 1){
+                        echo "<br>Hráč má OptiFine plášť.";
+                    }
+                    if ($player->getPlayerCape("labymod") == 1){
+                        echo "<br>Hráč má LabyMod plášť.";
+                    }
                     ?><br>
                     Registrace: <b><?php echo $time->date($player->getPlayerCraftMania("registred"))?></b><br>
                     Naposledy online: <b><?php echo $time->timeAgo($player->getPlayerCraftMania("last_online"))?></b><br>
