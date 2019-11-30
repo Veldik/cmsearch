@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>CMSearch | Domovská stránka</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#2575DC" />
-    <meta name="description" content="Domovská stránka CMSearch, jednoho z nejlepších vyhledávačů hráčů, kteří hrají na serveru CraftMania." />
+    <meta name="theme-color" content="#2575DC">
+    <meta name="description" content="Domovská stránka CMSearch, jednoho z nejlepších vyhledávačů hráčů, kteří hrají na serveru CraftMania.">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <script type="text/javascript" src="./js/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
