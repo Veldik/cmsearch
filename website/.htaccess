@@ -1,11 +1,21 @@
 RewriteEngine On
+RewriteBase /
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+
+<Files ./config.json>
+Order Allow,Deny
+Deny from all
+</Files>
+
 RewriteRule ^lb?$ leaderboard.php
 RewriteRule ^leaderboard?$ leaderboard.php
 RewriteRule ^player/(.*) player.php?nick=$1
+
 RewriteRule ^banner?$ banner/index.php
 RewriteRule ^banner/(.*)/([0-9]+) banner/banner.php?nick=$1&type=$2
+
 RewriteRule ^file-not-found?$ error/404.html
 RewriteRule ^internal-server-error?$ error/500.html
 ErrorDocument 404 "404"
