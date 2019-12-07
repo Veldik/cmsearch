@@ -72,6 +72,9 @@ class Player
         if ($skintype == "full"){
             return "https://visage.surgeplay.com/full/512/$skinuuid";
         }
+        if ($skintype == "full304"){
+            return "https://visage.surgeplay.com/full/304/$skinuuid";
+        }
         if ($skintype == "skin" || $skintype == "rawskin"){
             return "https://visage.surgeplay.com/skin/512/$skinuuid";
         }
