@@ -16,7 +16,7 @@
     <article>
         <h1>
             <center>
-                Zde již brzy bude titulní strana, můžeš vyzkoušet vyhledávání v hlavičce.
+                Zde již brzy bude titulní strana, avšak vyhledávání v hlavičce již funguje!
             </center>
         </h1>
     </article>
