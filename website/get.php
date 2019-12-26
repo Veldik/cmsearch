@@ -72,14 +72,47 @@ class Player
         if ($skintype == "full"){
             return "https://visage.surgeplay.com/full/512/$skinuuid";
         }
-        if ($skintype == "full304"){
-            return "https://visage.surgeplay.com/full/304/$skinuuid";
-        }
         if ($skintype == "skin" || $skintype == "rawskin"){
             return "https://visage.surgeplay.com/skin/512/$skinuuid";
         }
     }
+    // Loadovani u origa historie jmén
+    public function getPlayerNamesLoad(){
+        global $mojangplayeruuid;
+        global $mojangnamesjson;
+        global $mojangnamesdata;
+        global $origo;
 
+        $mojangplayeruuidwithoutbrackets = str_replace("-", "", $mojangplayeruuid);
+
+        if ($origo){
+            $mojangnamesurl = "https://api.mojang.com/user/profiles/$mojangplayeruuidwithoutbrackets/names";
+            $mojangnamesjson = file_get_contents($mojangnamesurl);
+            $mojangnamesdata = json_decode($mojangnamesjson);
+        }
+    }
+    // Zjišťování u origa historie jmén
+    public function getPlayerNames($datatype, $id)
+    {
+        global $mojangnamesdata;
+        global $mojangnamesjson;
+        global $origo;
+
+        if ($origo){
+            if ($datatype == "number"){
+                $mojangnamesnumber  = substr_count($mojangnamesjson, '{');
+                return $mojangnamesnumber;
+                //return $mojangnamesdata[0]->name;
+            } elseif ($datatype == "name"){
+                return $mojangnamesdata[$id]->name;
+            } else {
+              return 0;
+            }
+        } else {
+            return 0;
+        }
+
+    }
     // Zjišťování zda má hráč cape
     public function getPlayerCape($capetype)
     {

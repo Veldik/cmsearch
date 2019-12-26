@@ -12,6 +12,7 @@ $time = new Time();
 // Zavolání funkce
 $player->getPlayer();
 $player->getPlayerCraftManiaCheck();
+$player->getPlayerNamesLoad();
 //global proměnné
 global $origo;
 ?>
@@ -137,7 +138,18 @@ global $origo;
                 echo "</div>";
             }
             ?>
-
+            <?php
+            if($origo){
+                echo '<div class="info">';
+                echo '<h2>Historie jmen:</h2>';
+                for ($x = ($player->getPlayerNames("number", 0) - 1); $x >= 0; $x--){
+                    echo '<p>';
+                    echo $player->getPlayerNames("name", $x);
+                    echo '</p>';
+                }
+                echo '</div>';
+            }
+            ?>
         </div>
     </article>
     <footer>
