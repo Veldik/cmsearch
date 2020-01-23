@@ -14,7 +14,7 @@ CMSearch je webová aplikace, která slouží k vyhledávání a generaci banner
 8. Odkaz na listinu trestů
 
 ## Odkazy:
-* **Vyhledávač:** [https://cm.velda.xyz/player](https://cm.velda.xyz/player)
+* **Vyhledávač:** [https://cm.velda.xyz/](https://cm.velda.xyz/)
 * **Generátor bannerů:** Momentálně nedostupné!
 * **Leaderboard:** Momentálně nedostupné!
 
