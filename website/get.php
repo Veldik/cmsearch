@@ -312,6 +312,39 @@ class Player
             if ($datatype == "discord_id") {
                 return $cmplayerdata->discord->id;
             }
+            // VIP/RANKS
+            $cmplayervipdata = $cmplayerdata->groups->vip;
+            if ($datatype == "primary_vip") {
+                if (isset($cmplayervipdata->primary)) {
+                    return ucfirst($cmplayervipdata->primary);
+                } else {
+                  return "Hráč";
+                }
+            }
+            
+            if ($datatype == "primary_vip_color") {
+                if ($this->getPlayerCraftMania("primary_vip") == "Owner") {
+                    return "#00AAAA";
+                } elseif ($this->getPlayerCraftMania("primary_vip") == "Admin" || $this->getPlayerCraftMania("primary_vip") == "Adminka") {
+                    return "#FF5555";
+                } elseif ($this->getPlayerCraftMania("primary_vip") == "Developer" || $this->getPlayerCraftMania("primary_vip") == "Developerka") {
+                    return "#FFFF55";
+                } elseif ($this->getPlayerCraftMania("primary_vip") == "Builder" || $this->getPlayerCraftMania("primary_vip") == "Builderka") {
+                    return "#0000AA";
+                } elseif ($this->getPlayerCraftMania("primary_vip") == "Helper" || $this->getPlayerCraftMania("primary_vip") == "Helperka") {
+                    return "#00AA00";
+                } elseif ($this->getPlayerCraftMania("primary_vip") == "Obsidian") {
+                    return "#5555FF";
+                } elseif ($this->getPlayerCraftMania("primary_vip") == "Emerald") {
+                    return "#55FF55";
+                } elseif ($this->getPlayerCraftMania("primary_vip") == "Diamond") {
+                    return "#55FFFF";
+                } elseif ($this->getPlayerCraftMania("primary_vip") == "Gold") {
+                    return "#FFAA00";
+                } else {
+                    return "#AAAAAA";
+                }
+            }
         }
     }
     public function getPlayerDiscord($datatype)
