@@ -63,6 +63,7 @@ global $origo;
                         echo "<br>Hráč má LabyMod plášť.";
                     }
                     ?><br>
+                    Rank: <b><span style="color: <?php echo $player->getPlayerCraftMania("primary_vip_color")?>"><?php echo $player->getPlayerCraftMania("primary_vip")?></b><br>
                     Registrace: <b><?php echo $time->date($player->getPlayerCraftMania("registred"))?></b><br>
                     Naposledy online: <b><?php echo $time->timeAgo($player->getPlayerCraftMania("last_online"))?></b><br>
                     Nahraný čas: <b><?php echo round($player->getPlayerCraftMania("played_time"))?> hodin</b>
