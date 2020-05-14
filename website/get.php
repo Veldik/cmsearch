@@ -219,9 +219,7 @@ class Player
             //Ranked
             $cmplayerrankeddata = $cmplayerdata->ranked;
             if ($datatype == "global_level" || $datatype == "level") {
-                return $cmplayerrankeddata->creative_level + $cmplayerrankeddata->vanilla_level + $cmplayerrankeddata->survival_level;
-                // Custom počítání globálního levelu protože ho api vrací špatně, až bude v api správně můžu smazat
-                // return $cmplayerrankeddata->global_level;
+                return $cmplayerrankeddata->global_level;
             }
             if ($datatype == "survival_level") {
                 return $cmplayerrankeddata->survival_level;
