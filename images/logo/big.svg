@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="538" height="128" viewBox="0 0 538 128">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="538" height="128" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#29b8dc"/>
+      <stop offset="1" stop-color="#05518b"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <rect y="14" width="382" height="95" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="big" clip-path="url(#clip-path)">
+    <g id="big-2" data-name="big" transform="translate(-1180 -245)">
+      <rect id="Image_1" data-name="Image 1" width="538" height="128" rx="40" transform="translate(1180 245)" fill="url(#linear-gradient)"/>
+      <g id="Scroll_Group_1" data-name="Scroll Group 1" transform="translate(1300 246)" clip-path="url(#clip-path-2)" style="isolation: isolate">
+        <text id="CMSEARCH_" data-name="CMSEARCH
+" transform="translate(0 99)" fill="#fff" font-size="104" font-family="Staatliches-Regular, Staatliches"><tspan x="0" y="0">CMSEARCH</tspan><tspan x="0" y="69"></tspan></text>
+      </g>
+      <path id="Icon_awesome-search" data-name="Icon awesome-search" d="M1,63.324,15.257,49.063a3.43,3.43,0,0,1,2.432-1H20.02a29.739,29.739,0,1,1,5.149,5.149v2.332a3.43,3.43,0,0,1-1,2.432L9.907,72.235a3.419,3.419,0,0,1-4.849,0L1.01,68.187A3.449,3.449,0,0,1,1,63.324ZM43.479,48.061A18.309,18.309,0,1,0,25.17,29.752,18.3,18.3,0,0,0,43.479,48.061Z" transform="translate(1207.739 272.256)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

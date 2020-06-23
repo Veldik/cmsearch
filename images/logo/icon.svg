@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#29b8dc"/>
+      <stop offset="1" stop-color="#05518b"/>
+    </linearGradient>
+  </defs>
+  <g id="icon" transform="translate(-1181 -232)">
+    <rect id="Image_1" data-name="Image 1" width="128" height="128" rx="40" transform="translate(1181 232)" fill="url(#linear-gradient)"/>
+    <path id="Icon_awesome-search" data-name="Icon awesome-search" d="M1,63.324,15.257,49.063a3.43,3.43,0,0,1,2.432-1H20.02a29.739,29.739,0,1,1,5.149,5.149v2.332a3.43,3.43,0,0,1-1,2.432L9.907,72.235a3.419,3.419,0,0,1-4.849,0L1.01,68.187A3.449,3.449,0,0,1,1,63.324ZM43.479,48.061A18.309,18.309,0,1,0,25.17,29.752,18.3,18.3,0,0,0,43.479,48.061Z" transform="translate(1208.739 259.256)" fill="#fff"/>
+  </g>
+</svg>

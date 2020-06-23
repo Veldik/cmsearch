@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#29b8dc"/>
+      <stop offset="1" stop-color="#05518b"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect y="14" width="110" height="95" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="small" transform="translate(-1181 -232)">
+    <rect id="Image_1" data-name="Image 1" width="128" height="128" rx="40" transform="translate(1181 232)" fill="url(#linear-gradient)"/>
+    <g id="Scroll_Group_3" data-name="Scroll Group 3" transform="translate(1190 235)" clip-path="url(#clip-path)" style="isolation: isolate">
+      <text id="CMs" transform="translate(0 87)" fill="#fff" font-size="77" font-family="Staatliches-Regular, Staatliches"><tspan x="0" y="0">CMs</tspan></text>
+    </g>
+  </g>
+</svg>
