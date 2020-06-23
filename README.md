@@ -4,14 +4,14 @@
 CMSearch je webová aplikace, která slouží k vyhledávání a generaci bannerů hráčů a zobrazení těch nejlepších z nejleších, kteří hrajících na Minecraft serveru [CraftMania](https://craftmania.cz).
 
 ## Co můžete zjistit?
-1. Zda má člověk koupený nebo warez Minecraft
-2. Nahraný čas
-3. Datum registrace
-4. Level
-5. Zda je offline nebo online, popřípadě na jakém serveru se nachází
-6. Počet CraftCoins, CraftTokens a VoteTokens
-7. Celkový počet hlasů, počet hlasů za měsíc a za týden
-8. Odkaz na listinu trestů
+- Zda má člověk koupený nebo warez Minecraft
+- Nahraný čas
+- Datum registrace
+- Level
+- Zda je offline nebo online, popřípadě na jakém serveru se nachází
+- Počet CraftCoins, CraftTokens a VoteTokens
+- Celkový počet hlasů, počet hlasů za měsíc a za týden
+- Odkaz na listinu trestů
 
 ## Odkazy:
 * **Vyhledávač:** [https://cm.velda.xyz/](https://cm.velda.xyz/)
