@@ -9,8 +9,6 @@ Order Allow,Deny
 Deny from all
 </Files>
 
-RewriteRule ^lb?$ leaderboard.php
-RewriteRule ^leaderboard?$ leaderboard.php
 RewriteRule ^player/(.*) player.php?nick=$1
 RewriteRule ^cmapi/(.*)/(.*) cmapi.php?var=$1&nick=$2
 
