@@ -15,5 +15,9 @@ RewriteRule ^cmapi/(.*)/(.*) cmapi.php?var=$1&nick=$2
 RewriteRule ^banner?$ banner/index.php
 RewriteRule ^banner/(.*)/([0-9]+) banner/banner.php?nick=$1&type=$2
 
-ErrorDocument 404 /error/404.html
-ErrorDocument 500 /error/500.html
+ErrorDocument 403 /errorpages/403.html
+ErrorDocument 404 /errorpages/404.html
+ErrorDocument 405 /errorpages/405.html
+ErrorDocument 408 /errorpages/408.html
+ErrorDocument 500 /errorpages/500.html
+ErrorDocument 502 /errorpages/502.html
