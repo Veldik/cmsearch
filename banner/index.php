@@ -1,3 +1,3 @@
 <?php
-  echo "banner vytvoris /banner/nick/ciselnytyp"
+  echo "banner vytvoříš /banner/nick/ciselnytyp"
 ?>
