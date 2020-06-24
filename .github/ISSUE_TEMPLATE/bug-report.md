@@ -1,5 +1,6 @@
 ---
 name: Nahlášení bugu
+about: Šablona k nahlášení chyby
 title: "[BUG]"
 labels: Bug
 assignees: ''
