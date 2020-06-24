@@ -18,7 +18,7 @@
 <div class="container">
     <br>
     <div class="alert alert-warning" role="alert">
-        CMSearch | Web bude <b>již brzy</b>.
+        CMSearch | Web bude <b>soon</b>.
     </div>
 </div>
 <?php include("./footer.php"); ?>
