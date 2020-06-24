@@ -331,6 +331,8 @@ class Player
                     return "#0000AA";
                 } elseif ($this->getPlayerCraftMania("primary_vip") == "Helper" || $this->getPlayerCraftMania("primary_vip") == "Helperka") {
                     return "#00AA00";
+                } elseif ($this->getPlayerCraftMania("primary_vip") == "Eventer" || $this->getPlayerCraftMania("primary_vip") == "Eventerka") {
+                    return "#FF55FF";
                 } elseif ($this->getPlayerCraftMania("primary_vip") == "Obsidian") {
                     return "#5555FF";
                 } elseif ($this->getPlayerCraftMania("primary_vip") == "Emerald") {
