@@ -10,7 +10,10 @@ echo '
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/">Domů</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="alert(\'soon\')">Banners</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#" onclick="alert(\'soon\')">Updates</a>

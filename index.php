@@ -7,7 +7,6 @@
     <meta name="theme-color" content="#2575DC">
     <meta name="description"
           content="Domovská stránka CMSearch, jednoho z nejlepších vyhledávačů hráčů, kteří hrají na serveru CraftMania.">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
     <script type="text/javascript" src="./js/main.js"></script>
     <link rel="shortcut icon" href="/images/logo/icon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -16,9 +15,12 @@
 <body>
 <?php include("./analytics.php"); ?>
 <?php include("./header.php"); ?>
-<article>
-    <h1>Zde již brzy bude titulní strana, avšak vyhledávání v hlavičce již funguje!</h1>
-</article>
+<div class="container">
+    <br>
+    <div class="alert alert-warning" role="alert">
+        CMSearch | Web bude <b>již brzy</b>.
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
