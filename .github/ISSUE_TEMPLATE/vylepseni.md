@@ -7,5 +7,6 @@ assignees: ''
 
 ---
 
-**Co mě napadlo**
-Popis toho, co mě napadlo
+**Nápad:**
+
+**Co to přinese:**
