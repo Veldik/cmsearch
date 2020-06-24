@@ -399,12 +399,7 @@ class Player
         }
     }
 }
-class Leaderboard
-{
-    public function getCraftMania($datatype){
-        $url = "https://api.craftmania.cz/economy/leaderboard/";
-    }
-}
+
 class Time
 {
     public function timeAgo($timestamp){
