@@ -10,7 +10,7 @@ Deny from all
 </Files>
 
 RewriteRule ^player/(.*) player.php?nick=$1
-RewriteRule ^cmapi/(.*)/(.*) cmapi.php?var=$1&nick=$2
+RewriteRule ^api/(.*)/(.*) api.php?var=$1&nick=$2
 
 RewriteRule ^banner?$ banner/index.php
 RewriteRule ^banner/(.*)/([0-9]+) banner/banner.php?nick=$1&type=$2
