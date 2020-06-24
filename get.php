@@ -216,6 +216,12 @@ class Player
             if ($datatype == "aapoints" || $datatype == "aachpoints" || $datatype == "achievement_points") {
                 return $cmplayereconomydata->achievement_points;
             }
+            /*
+            // Podpora eventpointů
+            if ($datatype == "eventpoint" || $datatype == "epoints" || $datatype == "ep") {
+                return $cmplayereconomydata->event_points;
+            }
+            */
             //Ranked
             $cmplayerrankeddata = $cmplayerdata->ranked;
             if ($datatype == "global_level" || $datatype == "level") {
