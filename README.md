@@ -1,5 +1,5 @@
+[![Logo](./images/logo/big.png)](https://cm.velda.xyz)
 
-![Logo](./images/logo/big.png)
 ## Co to vůbec je?
 CMSearch je webová aplikace, která slouží k vyhledávání a generaci bannerů hráčů a zobrazení těch nejlepších z nejleších, kteří hrajících na Minecraft serveru [CraftMania](https://craftmania.cz).
 
