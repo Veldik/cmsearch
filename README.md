@@ -7,9 +7,9 @@ CMSearch je webová aplikace, která slouží k vyhledávání a generaci banner
 - Zda má hráč koupený nebo warez Minecraft
 - Odehraný čas na serveru
 - Datum registrace
-- Level
+- Serverové a globální levly
 - Zda je offline nebo online, popřípadě na jakém serveru se nachází
-- Počet CraftCoins, CraftTokens a VoteTokens
+- Počet CraftCoins, CraftTokens, VoteTokens, Karmy a Achivement points
 - Celkový počet hlasů, počet hlasů za měsíc a za týden
 
 ## Odkazy:
