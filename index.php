@@ -17,9 +17,11 @@
 <?php include("./header.php"); ?>
 <div class="container">
     <br>
+     <!--
     <div class="alert alert-warning" role="alert">
         CMSearch | Web bude <b>soon</b>.
     </div>
+    -->
 </div>
 <?php include("./footer.php"); ?>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
