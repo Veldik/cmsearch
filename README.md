@@ -1,4 +1,4 @@
-[![Logo](./images/logo/big.png)](https://cm.velda.xyz)
+![Logo](./images/logo/big.png)
 
 ## Co to vůbec je?
 CMSearch je webová aplikace, která slouží k vyhledávání a generaci bannerů hráčů a zobrazení těch nejlepších z nejleších, kteří hrajících na Minecraft serveru [CraftMania](https://craftmania.cz).
@@ -12,12 +12,8 @@ CMSearch je webová aplikace, která slouží k vyhledávání a generaci banner
 - Počet CraftCoins, CraftTokens, VoteTokens, Karmy a Achivement points
 - Celkový počet hlasů, počet hlasů za měsíc a za týden
 
-## Odkazy:
-* **Vyhledávač:** [https://cm.velda.xyz/](https://cm.velda.xyz/)
-* **Generátor bannerů:** Momentálně nedostupné!
-
 ## Podpora:
-Tento projekt je neoficiální, takže nehledejte podporu na serveru CraftMania. Pokud budete potřebovat pomoc nebo budete mít nápad na vylepšení, napište do [issues](https://github.com/Veldik/cmsearch/issues) nebo vyhledejte kontakt na mém [webu](https://velda.xyz).
+Tento projekt je neoficiální, takže nehledejte podporu na serveru CraftMania. Pokud budete potřebovat pomoc nebo budete mít nápad na vylepšení, napište do [issues](https://github.com/Veldik/cmsearch/issues) nebo vyhledejte kontakt na mém [webu](https://thevelda.eu).
 
 Nebráním se, kdybyste mi chtěli pomoc s tímto projektem.
 
