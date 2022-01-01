@@ -1,4 +1,6 @@
 ![Logo](./images/logo/big.png)
+## Archivace
+Díky všem moc za pomoc s projektem, avšak nevidím motivaci a důvod v něm pokračovat dále. Teoreticky pokud se nemýlím CraftMania API je pořád stejná, takže se zde stále vyskytuje možnost si to selfhostnout, popřípadě si můžete udělat fork a upravit na aktuální API.
 
 ## Co to vůbec je?
 CMSearch je webová aplikace, která slouží k vyhledávání a generaci bannerů hráčů a zobrazení těch nejlepších z nejleších, kteří hrajících na Minecraft serveru [CraftMania](https://craftmania.cz).
